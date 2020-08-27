@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Car Rental"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Car-Rental/
 ---
 This is Example 4.2 in the RL book.
 
@@ -35,7 +35,7 @@ Repeat...
 
 The algorithm is simply the Policy iteration method, whose pseudo code is given as follows:
 
-<div style="text-align:center"><img src="/files/Chapter4/Car/CR_p1.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter4/Car/CR_p1.PNG" alt="drawing" width="700"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 The difficulty is the calculation of transition probability. One little trick is that we did not directly calculate $$p(s^{\prime}, r\mid s,a)$$, which will require huge amount of memory. Instead, we transform the updating rule:
@@ -51,7 +51,7 @@ In such way, we can pre-calculate $$p(s^{\prime} \mid s,a)$$ and corresponding $
 
 We get Figure 4.2 in the book as follows:
 
-<div style="text-align:center"><img src="/files/Chapter4/Car/Figure4_2.svg" alt="drawing" width="720"/></div>
+<div style="text-align:center"><img src="/files/Chapter4/Car/Figure4_2.svg" alt="drawing" width="900"/></div>
 
 The stopping criteria for generating above figure is $$\Delta < 0.1$$. Applying different threshold value will result in slightly different results.
 

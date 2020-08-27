@@ -1,26 +1,35 @@
 ---
-layout: post
 title:  "Tic Tac Toe"
 date:   2020-07-09 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/TTT/
 ---
 This example is initiated in Section 1.5 in the RL book.
 
 ### Problem setup
 
-1. Train an agent against a imperfect fixed opponent.
+In this problem we have two purposes:
+
+1. Train an agent against a imperfect fixed opponent, where the fixed opponent means that given a state, the action taken by the opponent is deterministic.
 2. Train two agent against each other.
 
-* A fixed opponent means that given a state, the action taken by the opponent is deterministic.
 
 In problem 1, the opponent goes first, its piece is denoted as an **X**, while the agent's piece is denoted as an **O**.
 One grid on a chess board has 3 possible states: empty, a piece **X**, a piece **O**, we denote them as 0, 1, 2 respectively.
 
 For a 3x3 chess board, there are $$3^{3\times 3} = 19683$$ different states. \
 Actions for players are placing an **X** or **O** on an empty grid. \
-Rewards are 0 each step before the game ends. If agent wins, reward is 1 for the last step, if loses or tie, reward is -1 for th elast step.
+Rewards are 0 each step before the game ends. If agent wins, reward is 1 for the last step, if loses or tie, reward is -1 for the last step.
 
-### Demo
+### Algorithm
+
+Although we haven't learned any reinforcement learning algorithms here, the book provides a backup diagram and a *temporal-difference* updating rule, which enables us to actually writing some code to solve this problem. We update the state value only when greedy actions are taken according to the updating rule:
+
+$$V(S_t) = V(S_t) + \alpha [V(S_{t+1}) - V(S_t)]$$
+
+Knowledge about *backup diagram*, *state value*, *$$\epsilon$$-greedy policy* and so on will be learned in the next few chapters.
+
+### Results
 
 1. Match against an imperfect opponent
 
@@ -28,7 +37,7 @@ Rewards are 0 each step before the game ends. If agent wins, reward is 1 for the
 
 2. Agent vs agent
 
-Matches gets interesting here. Most of the time
+Matches gets interesting here, some examples are shown below:
 
 ![](/files/Chapter1/Game1.gif)  ![](/files/Chapter1/Game3.gif)  ![](/files/Chapter1/Game4_bad.gif)
 

@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "The 10-armed Testbed"
 date:   2020-07-09 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Ten-arm-bandit/
 ---
 This is to reproduce Figure 2.2, 2.3, 2.4, 2.5 in the RL book, and give the answer to Exercise 2.6 and 2.8.
 

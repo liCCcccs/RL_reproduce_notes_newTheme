@@ -1,8 +1,9 @@
 ---
-layout: post
+classes: wide
 title:  "Short Corridor (Policy gradient methods)"
 date:   2020-08-20 15:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Short-Corridor/
 ---
 This is to produce Example 13.1, Figure 13.1 and Figure 13.2 in RL book.
 <div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p0.PNG" alt="drawing" width="300"/></div>
