@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Dyna Maze (Dyna-Q+)"
 date:   2020-08-2 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Blocking-maze/
 ---
 This is Example 8.2 and 8.3 in RL book.
 
@@ -37,11 +37,11 @@ In shortcut maze, the original path from $$S$$ to $$G$$ still exist. Exploitatio
 
 The book does not give any pseudo code for Dyna-Q+, so the key point is to figure out the algorithm by ourselves from the description in words. For reader's convenience, we present Dyna-Q+ algorithm on the base of Dyna-Q.
 
-<div style="text-align:center"><img src="/files/Chapter8/Blocking_Maze/BM_pc3.png" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Blocking_Maze/BM_pc3.png" alt="drawing" width="650"/></div>
 
 For completeness, we still present the Tabular Dyna-Q algorithm here.
 
-<div style="text-align:center"><img src="/files/Chapter8/Dyna_Maze/DM_p1.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Dyna_Maze/DM_p1.PNG" alt="drawing" width="650"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 The parameters are not fully given in the book. As a result, we give the parameters that we used for the following plots: \
@@ -54,8 +54,8 @@ Elapsed time weight: $$\kappa = 0.00005$$ (For Dyna-Q+, in Blocking maze) \
 Averaged over 50 runs.
 
 We get Figure 8.4 and 8.5 as follows:\
-<img src="/files/Chapter8/Blocking_Maze/history.png" alt="drawing" width="360"/>
-<img src="/files/Chapter8/Blocking_Maze/history_sc.png" alt="drawing" width="360"/>
+<img src="/files/Chapter8/Blocking_Maze/history.svg" alt="drawing" width="420"/>
+<img src="/files/Chapter8/Blocking_Maze/history_sc.svg" alt="drawing" width="420"/>
 
 
 

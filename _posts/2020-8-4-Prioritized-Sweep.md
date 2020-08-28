@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Dyna Maze (Prioritized Sweep)"
 date:   2020-08-2 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Prioritized-sweep/
 ---
 This is Example 8.4 in RL book.
 
@@ -30,7 +30,9 @@ We are not able to solve each of these maps to find the optimal solution. We cou
 ## **Implementation**
 
 The Prioritized algorithm is given in the book, which is shown below, with my personal comments:
-<div style="text-align:center"><img src="/files/Chapter8/Psweep/PS_p1.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Psweep/PS_p1.PNG" alt="drawing" width="650"/></div>
+*(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
+
 It's worth to notice when searching for "$$\bar{S},\bar{A}$$ predictied lead to S", we should search it from the model (that has already experienced), instead of searching it globally, since all the knowledge about the environment that we have is in the model.
 
 Since Dyna-Q takes too many updates to converge in large maps, we can only get the data for Dyna-Q in the first few smaller maps. The parameters for generating the following plot is: \
@@ -42,7 +44,7 @@ Threshold: $$\theta = 0.0001$$
 The number of repetition is up to 10 times in smaller maps, and are at least 2 times in larger maps.
 
 We get a compromised version of figure in Example 8.4 in the book as follow. Note that we have under estimated the value since we only test for convergence to suboptimal solutions.
-<div style="text-align:center"><img src="/files/Chapter8/Psweep/compare_v3.png" alt="drawing" width="400"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Psweep/compare_v3.svg" alt="drawing" width="460"/></div>
 
 
 
@@ -50,7 +52,7 @@ We get a compromised version of figure in Example 8.4 in the book as follow. Not
 
 ## **Code Usage**
 
-Download the code [Blocking_Maze](https://github.com/MingruiSun2019/RLbook_reproducing/tree/master/Chapter8/Blocking_Maze).
+Download the code [Blocking_Maze](https://github.com/liCCcccs/Reinforcement-Learning-Book-Reproduce/tree/master/Chapter8/Prioritized_sweeping).
 
 To produce Figure 8.4 in the book:
 {% highlight Bash %}

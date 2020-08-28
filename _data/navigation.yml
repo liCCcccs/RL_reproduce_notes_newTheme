@@ -28,6 +28,8 @@ docs:
         url: /RL_notes/Ten-arm-bandit/
       - title: "Car rental"
         url: /RL_notes/Car-Rental/
+      - title: "Prioritized sweep"
+        url: /RL_notes/Prioritized-sweep/
 
 
 
