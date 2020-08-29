@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Windy Grid World"
+title:  "Windy Grid World (SARSA)"
 date:   2020-07-26 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Windy/
 ---
 <div style="text-align:center"><img src="/files/Chapter6/Windy_GridWorld/WGW_p1.PNG" alt="drawing" width="400"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*

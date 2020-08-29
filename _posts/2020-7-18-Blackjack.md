@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Blackjack Monte Carlo control"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Blackjack/
 ---
 ![](/files/Chapter5/Blackjack_title.jpg)
 

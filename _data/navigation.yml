@@ -22,20 +22,59 @@ docs:
       - title: "Tic-Tac-Toe"
         url: /RL_notes/TTT/
 
-  - title: Part I
+  - title: Chapter 2
     children:
       - title: "10 armed bandit"
         url: /RL_notes/Ten-arm-bandit/
-      - title: "Car rental"
+
+  - title: Chapter 4
+    children:
+      - title: "Grid problem (Policy evaluation)"
+        url: /RL_notes/Grid-problem/
+      - title: "Car rental (Policy iteration)"
         url: /RL_notes/Car-Rental/
+      - title: "Gambler's problem (Value iteration)"
+        url: /RL_notes/Car-Rental/
+
+  - title: Chapter 5
+    children:
+      - title: "Blackjack Monte Carlo control"
+        url: /RL_notes/Blackjack/
+      - title: "Racetrack Monte Carlo control"
+        url: /RL_notes/Racetrack/
+      - title: "Importance Sampling"
+        url: /RL_notes/Importance-Sampling/
+
+  - title: Chapter 6
+    children:
+      - title: "Random Walk ((batch) TD(0))"
+        url: /RL_notes/Random-Walk/
+      - title: "Windy-GridWorld (SARSA)"
+        url: /RL_notes/Windy/
+      - title: "Cliff-Walk (Q-learning)"
+        url: /RL_notes/Cliff/
+      - title: "Maximum Bias (Double Q-learning)"
+        url: /RL_notes/max-bias/
+
+  - title: Chapter 7
+    children:
+      - title: "Random Walk (n-step TD)"
+        url: /RL_notes/n-step-TD/
+
+  - title: Chapter 8
+    children:
       - title: "Dyna Maze (Dyna-Q)"
         url: /RL_notes/Dyna-Maze/
+
       - title: "Blocking&shorcut Maze (Dyna-Q+)"
         url: /RL_notes/Blocking-maze/
+
       - title: "Dyna-Maze (Prioritized sweep)"
         url: /RL_notes/Prioritized-sweep/
+
       - title: "Expected vs Sample Updates"
         url: /RL_notes/EvS/
+
       - title: "Trajectory sampling"
         url: /RL_notes/Traj-Sample/
 

@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Random Walk"
+title:  "Random Walk (TD(0) & batch updating)"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Random-Walk/
 ---
 <div style="text-align:center"><img src="/files/Chapter6/RandomWalk/RW.PNG" alt="drawing" width="500"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*

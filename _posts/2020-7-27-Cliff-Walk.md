@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Cliff Walk (Compare Q-learning, SARSA, Expected SARSA)"
 date:   2020-07-27 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Cliff/
 ---
 <div style="text-align:center"><img src="/files/Chapter6/Cliff_Walk/CW_p1.PNG" alt="drawing" width="400"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*

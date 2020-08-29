@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Grid problem"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Grid-problem/
 ---
 This is **Example 4.1** in the RL book.
 

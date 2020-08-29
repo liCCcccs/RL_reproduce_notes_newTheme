@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Gambler's problem"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Gambler/
 ---
 This example is initiated in Chapter 2.3 in the RL book.
 

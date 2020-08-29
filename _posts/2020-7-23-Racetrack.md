@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Racetrack Monte Carlo control"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Racetrack/
 ---
 <div style="text-align:center"><img src="/files/Chapter5/Racetrack/Racetrack.JPG" alt="drawing" width="600"/></div> \
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*

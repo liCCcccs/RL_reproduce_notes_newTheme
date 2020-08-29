@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Off-policy evaluation by Importance Sampling"
 date:   2020-07-13 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Importance-Sampling/
 ---
 
 This is Example 5.4 and Example 5.5 in the RL book.
