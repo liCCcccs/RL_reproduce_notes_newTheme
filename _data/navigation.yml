@@ -28,8 +28,16 @@ docs:
         url: /RL_notes/Ten-arm-bandit/
       - title: "Car rental"
         url: /RL_notes/Car-Rental/
-      - title: "Prioritized sweep"
+      - title: "Dyna Maze (Dyna-Q)"
+        url: /RL_notes/Dyna-Maze/
+      - title: "Blocking&shorcut Maze (Dyna-Q+)"
+        url: /RL_notes/Blocking-maze/
+      - title: "Dyna-Maze (Prioritized sweep)"
         url: /RL_notes/Prioritized-sweep/
+      - title: "Expected vs Sample Updates"
+        url: /RL_notes/EvS/
+      - title: "Trajectory sampling"
+        url: /RL_notes/Traj-Sample/
 
 
 

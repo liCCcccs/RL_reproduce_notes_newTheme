@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Expected vs. Sample Updates"
 date:   2020-08-2 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/EvS/
 ---
 This is Example 8.4 in RL book.
 
@@ -38,17 +38,17 @@ In this problem, we are going to use the expected update once (contains b comput
 The branching factor used for evaluation is [2,10,100,1000,10000]. The value for "next state" is generated from Gaussian distribution (mean = 1, variance = 1). The transition probability to all "next state" are identical. The number of repetition for each of the branching factor is [4000,2000,500,300,200] respectively. Set the reward to zero, as we want to keep it simple. In addition, since we assume there is only one "current state", the RMS error is identical to the absolute value of error.
 
 With above information, we can get a plot very similar to Figure 8.7 in the book as follows:
-<div style="text-align:center"><img src="/files/Chapter8/Exp_sample/history_v3.png" alt="drawing" width="500"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Exp_sample/history_v3.svg" alt="drawing" width="550"/></div>
 
 
-By the way, we also plot a figure for *Exercise 8.6*, where the transition probability to all "next state" is highly skewed. We generate the transition probability randomly in each repetition for every "next state", and normalize them to a sum of 1. We get the following figure. It is very similar to Figure 8.7 in the book. The only slight difference is that all curves in the figure below are a little bit higher than in above figure, which means the performance of sample updates degrades a little bit with highly skewed transition probability.
+By the way, we also plot a figure for *Exercise 8.6*, where the transition probability to all "next state" is highly skewed. We generate the transition probability randomly in each repetition for every "next state", and normalize them to a sum of 1. We get the following figure. It is very similar to Figure 8.7 in the book. The only slight difference is that all curves in the figure below are a little bit lower than in above figure, which means the performance of sample updates is better with highly skewed transition probability. (I'm not sure about the correctness of this conclusion)
 
-<div style="text-align:center"><img src="/files/Chapter8/Exp_sample/history_skewed_v2.png" alt="drawing" width="500"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Exp_sample/history_skewed_v2.svg" alt="drawing" width="550"/></div>
 
 
 ## **Code Usage**
 
-Download the code [Expected_Sample_Update](https://github.com/MingruiSun2019/RLbook_reproducing/tree/master/Chapter8/Expected_Sample_Update).
+Download the code [Expected_Sample_Update](https://github.com/liCCcccs/Reinforcement-Learning-Book-Reproduce/tree/master/Chapter8/Expected_Sample_Update).
 
 To produce Figure 8.7 in the book:
 {% highlight Bash %}

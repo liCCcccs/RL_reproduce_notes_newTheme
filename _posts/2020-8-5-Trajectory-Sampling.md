@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Trajectory sampling"
 date:   2020-08-5 16:10:15 +1000
 categories: jekyll update
+pernmalink: /RL_notes/Traj-Sample/
 ---
 This is to produce Figure 8.8 in RL book (including Exercise 8.8).
 
@@ -60,7 +60,7 @@ Stop criterion for policy evaluation: $$\delta = 0.1$$.
 
 The figure I generated is as follows:
 
-<div style="text-align:center"><img src="/files/Chapter8/Traj_sampling/compare_1000.png" alt="drawing" width="400"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Traj_sampling/compare_1000.svg" alt="drawing" width="460"/></div>
 
 
 
@@ -74,14 +74,14 @@ Average over 500 episodes for MC prediction.
 
 The figure I generated is as follows (this also includes Exercise 8.8):
 
-<div style="text-align:center"><img src="/files/Chapter8/Traj_sampling/compare_10000.png" alt="drawing" width="400"/></div>
+<div style="text-align:center"><img src="/files/Chapter8/Traj_sampling/compare_10000.svg" alt="drawing" width="460"/></div>
 
 
 
 
 ## **Code Usage**
 
-Download the code [Blocking_Maze](https://github.com/MingruiSun2019/RLbook_reproducing/tree/master/Chapter8/Blocking_Maze).
+Download the code [Blocking_Maze](https://github.com/liCCcccs/Reinforcement-Learning-Book-Reproduce/tree/master/Chapter8/Trajectory_Sampling).
 
 To produce Figure 8.8 with 1000 states:
 {% highlight Bash %}

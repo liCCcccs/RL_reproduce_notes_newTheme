@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Dyna Maze"
 date:   2020-08-1 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Dyna-Maze/
 ---
 <div style="text-align:center"><img src="/files/Chapter8/Dyna_Maze/DM_p2.PNG" alt="drawing" width="250"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
