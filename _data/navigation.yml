@@ -78,6 +78,13 @@ docs:
       - title: "Trajectory sampling"
         url: /RL_notes/Traj-Sample/
 
+  - title: Chapter 9
+    children:
+      - title: "Random Walk (Gradient MC)"
+        url: /RL_notes/Gradient-MC/
+      - title: "Random Walk (Semi-gradient TD)"
+        url: /RL_notes/Semi-Gradient-TD/
+
 
 
   - title: Part II
