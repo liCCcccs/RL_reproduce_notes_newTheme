@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Random Walk (Polynomial and Fourier basis)"
 date:   2020-08-9 15:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/P-F-basis/
 ---
 This is to produce Figure 9.3, 9.4 and 9.5 in RL book.
 
@@ -80,7 +80,8 @@ There is no technical difficulty to produce Figure 9.3 and 9.4:
 
 Gradient Monte Carlo method is used to produce Figure 9.5, whose pseudo code is given as follows.
 
-<div style="text-align:center"><img src="/files/Chapter9/Gradient_MC/GMC_p1.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter9/Gradient_MC/GMC_p1.PNG" alt="drawing" width="700"/></div>
+*(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 The parameters for training are:
 
@@ -89,13 +90,13 @@ Averaged over 30 runs.
 
 We get Figure 9.5 in the book as follows.
 
-<div style="text-align:center"><img src="/files/Chapter9/Fourier_Poly_Basis/root_VE_history.png" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter9/Fourier_Poly_Basis/root_VE_history.svg" alt="drawing" width="700"/></div>
 
 
 
 ## **Code Usage**
 
-Download the code [Fourier_Poly_Basis](https://github.com/MingruiSun2019/RLbook_reproducing/tree/master/Chapter9/Fourier_Poly_Basis).
+Download the code [Fourier_Poly_Basis](https://github.com/liCCcccs/Reinforcement-Learning-Book-Reproduce/tree/master/Chapter9/Fourier_Poly_Basis).
 
 To produce the left figure in Figure 9.3 and 9.4:
 {% highlight Bash %}
@@ -123,7 +124,6 @@ or
 {% highlight Bash %}
 python3 Random_walk_Fourier.py
 python3 plot_val_Fourier.py {% endhighlight %}
-
 
 where you can change any of the parameters you like in the first few lines of script.
 

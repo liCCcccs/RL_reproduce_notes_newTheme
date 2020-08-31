@@ -84,6 +84,10 @@ docs:
         url: /RL_notes/Gradient-MC/
       - title: "Random Walk (Semi-gradient TD)"
         url: /RL_notes/Semi-Gradient-TD/
+      - title: "Random Walk (Poly&Fourier basis)"
+        url: /RL_notes/P-F-basis/
+      - title: "Coarse Coding & Tile Coding"
+        url: /RL_notes/Coding/
 
 
 
