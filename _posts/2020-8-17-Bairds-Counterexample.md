@@ -1,12 +1,12 @@
 ---
-layout: post
 title:  "Baird's counterexample"
 date:   2020-08-16 15:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Baird-counterexample/
 ---
 This is to produce Figure 11.2, Figure 11.5, Figure 11.6 in RL book.
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p1.PNG" alt="drawing" width="500"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p1.PNG" alt="drawing" width="550"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 
@@ -35,23 +35,23 @@ The book didn't give any pseudo code for all these figures. Therefore presented 
 
 Semi-gradient Off-policy TD (for Figure 11.2 left):
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p2.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p2.PNG" alt="drawing" width="750"/></div>
 
 Semi-gradient DP (for Figure 11.2 right):
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p3.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p3.PNG" alt="drawing" width="750"/></div>
 
 TD(0) with gradient correction (TDC) (for Figure 11.5 left):
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p4.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p4.PNG" alt="drawing" width="750"/></div>
 
 Expected TDC (for Figure 11.5 right):
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p5.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p5.PNG" alt="drawing" width="750"/></div>
 
 Expected Emphatic-TD (for Figure 11.6):
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p6.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/BC_p6.PNG" alt="drawing" width="750"/></div>
 
 The formula for calculating Projection Bellman Error given in equation(11.25) in the book:
 
@@ -79,17 +79,17 @@ All parameters for the following figures are clearly stated in the book.
 
 We get Figure 11.2 as follows:
 
-<img src="/files/Chapter11/Bairds_CE/Figure11_2_left.svg" alt="drawing" width="350"/>
-<img src="/files/Chapter11/Bairds_CE/Figure11_2_right.svg" alt="drawing" width="350"/>
+<img src="/files/Chapter11/Bairds_CE/Figure11_2_left.svg" alt="drawing" width="390"/>
+<img src="/files/Chapter11/Bairds_CE/Figure11_2_right.svg" alt="drawing" width="390"/>
 
 We get Figure 11.5:
 
-<img src="/files/Chapter11/Bairds_CE/Figure11_5_left.svg" alt="drawing" width="350"/>
-<img src="/files/Chapter11/Bairds_CE/Figure11_5_right.svg" alt="drawing" width="350"/>
+<img src="/files/Chapter11/Bairds_CE/Figure11_5_left.svg" alt="drawing" width="390"/>
+<img src="/files/Chapter11/Bairds_CE/Figure11_5_right.svg" alt="drawing" width="390"/>
 
 We get Figure 11.6:
 
-<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/Figure11_6.svg" alt="drawing" width="450"/></div>
+<div style="text-align:center"><img src="/files/Chapter11/Bairds_CE/Figure11_6.svg" alt="drawing" width="500"/></div>
 
 This figure is a little different than that in the book. It seems in our figure it converges faster. It is probably due to some details (synchronized or asynchronized updates of emphasis M).
 

@@ -89,6 +89,18 @@ docs:
       - title: "Coarse Coding & Tile Coding"
         url: /RL_notes/Coding/
 
+  - title: Chapter 10
+    children:
+      - title: "Mountain Car"
+        url: /RL_notes/Mountain-Car/
+      - title: "Queuing Task"
+        url: /RL_notes/Queuing-Task/
+
+  - title: Chapter 10
+    children:
+      - title: "Baird Counterexample"
+        url: /RL_notes/Baird-counterexample/
+
 
 
   - title: Part II
