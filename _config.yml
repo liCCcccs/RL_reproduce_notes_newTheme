@@ -59,9 +59,9 @@ defaults:
 
 author:
   name: "Lily"
-  avatar: "/files/other/head/unnamed.jpg"
-  bio: "Woman in Engineering" # Note: Markdown is allowed
-  location: "Somewhere"
+  avatar: "/files/other/head/Screenshot2.png"
+  bio: " I am Lily :D" # Note: Markdown is allowed
+  location: "Somewhere on ..."
   links:
     - label: "Made Mistakes"
       icon: "fas fa-fw fa-link"
