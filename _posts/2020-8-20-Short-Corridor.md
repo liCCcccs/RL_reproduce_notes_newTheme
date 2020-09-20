@@ -1,5 +1,4 @@
 ---
-classes: wide
 title:  "Short Corridor (Policy gradient methods)"
 date:   2020-08-20 15:10:15 +1000
 categories: jekyll update
@@ -12,10 +11,10 @@ This is to produce Example 13.1, Figure 13.1 and Figure 13.2 in RL book.
 
 As shown in above figure, there are totally 3 states and a terminal at the right most. The actions are to go left or go right. For state 0 and state 2, actions will have normal results, but in state 1, actions will lead to reversed results. The problem setup is summarized below.
 
-State: 0 or 1 or 2
-Starting point: 0
-Action: 0:go right, 1:go left
-Reward: -1 each step until termination (the reward for the state-action pair leading to terminal is zero)
+**State**: 0 or 1 or 2 \
+**Starting point**: 0 \
+**Action**: 0:go right, 1:go left \
+**Reward**: -1 each step until termination (the reward for the state-action pair leading to terminal is zero)
 
 The special thing about this problem is we cannot distinguish the three states, that is, we assume that all three states have the same state value under function approximation. This problem is meaningful probably because we can see it as a small portion of an environment with huge number of states, where some states share the same feature vector and thus has the same value. In this case, methods rely on state value may behave badly.
 
@@ -37,7 +36,9 @@ where $$v_0, v_1, v_2$$ represents the value of the three states from left to ri
 
 $$v_0 = \frac{p^2 - 3p + 4}{p^2 - p}, \;\;\;\; 0 < p < 1$$
 
+The result is shown below.
 
+<div style="text-align:center"><img src="/files/Chapter13/Short_C/Example13_1_true.svg" alt="drawing" width="500"/></div>
 
 We can also solve it using some learning methods. As the book says, we define feature vector $$\mathbf{x}(S,right)=[1,0]^{\top}$$ and $$\mathbf{x}(S,left)=[0,1]^{\top}$$. Hence, we define weights with the same dimension $$\mathbf{w} = [w_0, w_1]$$. Then the state-action value can be written as:
 
@@ -53,19 +54,19 @@ $$\nabla v_{\pi}(S) = [\pi(A_0|S), \pi(A_1|S)]^{\top}$$
 
 Then it is straightforward to use the semi-gradient TD(0) algorithm to solve the problem, giving different policies, and then form the curve. For completeness, the pseudo code of semi-gradient on-policy TD(0) is given below.
 
-<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p1.PNG" alt="drawing" width="700"/></div>
+<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p1.PNG" alt="drawing" width="780"/></div>
 
 Another way is to use Semi-gradient DP method. However, here we have to use trajectory sampling as mentioned in Section 8.6 in the book, because all states share the same value. If a state is less visited, then it should contributed less to the state-value.
 Sweeping with equal probability does not works in this problem. If we insist to sweep with equal probability, we have to multiply a factor indicating the state distribution. Thus, in either DP method we have to obtain the state distribution first. This can be easily done by simulating the task many times. The pseudo code for these two DP methods are shown below.
 
-<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p2.PNG" alt="drawing" width="700"/></div>
-<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p3.PNG" alt="drawing" width="700"/></div>
+<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p2.PNG" alt="drawing" width="780"/></div>
+<div style="text-align:center"><img src="/files/Chapter13/Short_C/SC_p3.PNG" alt="drawing" width="780"/></div>
 
 For the TD method, we looped for 10000 episodes; for two DP methods, we looped for 50000 samples or sweeps. and the step size are $$\alpha = 0.01$$. The results are shown below.
 
-<img src="/files/Chapter13/Short_C/Example13_1.svg" alt="drawing" width="240"/>
-<img src="/files/Chapter13/Short_C/Example13_1_DP.svg" alt="drawing" width="240"/>
-<img src="/files/Chapter13/Short_C/Example13_1_DP_v2.svg" alt="drawing" width="240"/>
+<img src="/files/Chapter13/Short_C/Example13_1.svg" alt="drawing" width="300"/>
+<img src="/files/Chapter13/Short_C/Example13_1_DP.svg" alt="drawing" width="300"/>
+<img src="/files/Chapter13/Short_C/Example13_1_DP_v2.svg" alt="drawing" width="300"/>
 
 
 ## **Figure 13.1**
@@ -126,6 +127,10 @@ We get something similar to Figure 13.2 as follows.
 Download the code [Short_Corridor](https://github.com/liCCcccs/Reinforcement-Learning-Book-Reproduce/tree/master/Chapter13/Short_Corridor).
 
 To produce the figure in Example 13.1:
+
+{% highlight Bash %}
+python3 plot_true_val.py   # solve Bellman equation set {% endhighlight %}
+
 {% highlight Bash %}
 python3 Example13_1.py    # Semi-gradient TD(0)
 python3 plot_val.py -m 0  {% endhighlight %}
@@ -135,13 +140,14 @@ python3 Example13_1_DP.py    # DP(trajectory sampling)
 python3 plot_val.py -m 1  {% endhighlight %}
 
 {% highlight Bash %}
-python3 Example13_1_DP_v2.py    # DP(trajectory sampling)
+python3 Example13_1_DP_v2.py    # DP(distribution factor)
 python3 plot_val.py -m 2  {% endhighlight %}
 
 To produce Figure 13.1:
 {% highlight Bash %}
 python3 Get_REINFORCE_data.py
 python3 plot_REIN.py {% endhighlight %}
+Notice that when $$\alpha = 2^{-12}$$, some run can take very long, because the agent is trapped and cannot end an episode. If this happens, you can wait a few minites, if no progress, you can stop the program and try again.
 
 To produce Figure 13.2:
 {% highlight Bash %}

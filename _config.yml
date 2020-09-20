@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Content me
+title: RL book reproduction
 email: sunmr2017@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  Reference book:Reinforcement Learning book, 2nd edition, by Richard S. Sutton, Andrew G. Barto
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "RL_reproduce_notes_newTheme" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: hha
-github_username:  MingruiSun2019
+#twitter_username: hha
+github_username:  liCCcccs
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -46,7 +46,7 @@ defaults:
       layout: single
       classes: wide
       search: true
-      read_time: true
+      read_time: false
       words_per_minute: 100
       comments: true
       share: true
@@ -58,9 +58,9 @@ defaults:
 
 
 author:
-  name: "Your Name"
+  name: "Lily"
   avatar: "/files/other/head/unnamed.jpg"
-  bio: "I am an **amazing** person." # Note: Markdown is allowed
+  bio: "Woman in Engineering" # Note: Markdown is allowed
   location: "Somewhere"
   links:
     - label: "Made Mistakes"
@@ -71,10 +71,10 @@ author:
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/liCCcccs"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/mmistakes"
 
 
 # Exclude from processing.

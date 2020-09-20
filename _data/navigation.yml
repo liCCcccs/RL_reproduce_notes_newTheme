@@ -96,22 +96,19 @@ docs:
       - title: "Queuing Task"
         url: /RL_notes/Queuing-Task/
 
-  - title: Chapter 10
+  - title: Chapter 11
     children:
       - title: "Baird Counterexample"
         url: /RL_notes/Baird-counterexample/
 
-
-
-  - title: Part II
+  - title: Chapter 12
     children:
-      - title: "Short Corridor"
+      - title: "Mountain Car (Eligibility Trace)"
+        url: /RL_notes/Mountain-Car-ET/
+      - title: "Random Walk (Eligibility Trace)"
+        url: /RL_notes/Random-Walk-ET/
+
+  - title: Chapter 13
+    children:
+      - title: "Short Corridor (Policy gradient)"
         url: /RL_notes/Short-Corridor/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/

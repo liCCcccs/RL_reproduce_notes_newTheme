@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Random Walk"
+title:  "Random Walk (Eligibility Trace)"
 date:   2020-08-17 16:10:15 +1000
 categories: jekyll update
+permalink: /RL_notes/Random-Walk-ET/
 ---
 <div style="text-align:center"><img src="/files/Chapter7/TDn/RW.PNG" alt="drawing" width="500"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
@@ -64,14 +64,14 @@ However, this updating rule causes rounding error (addition betweem large number
 
 TD($$\lambda$$) is naturally much faster than offline $$\lambda$$-return algorithm, its formulation is much more computation-friendly. The pseudo code is given below.
 
-<div style="text-align:center"><img src="/files/Chapter12/Random_Walk/RRW_p1.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter12/Random_Walk/RRW_p1.PNG" alt="drawing" width="700"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 **True online TD($$\lambda$$) algorithm (for Figure 12.8)**
 
 True online TD($$\lambda$$) approximates Online $$\lambda$$-return algorithm, and gives exactly the same result in a more computation-friendly way. The pseudo code is given below.
 
-<div style="text-align:center"><img src="/files/Chapter12/Random_Walk/RRW_p2.PNG" alt="drawing" width="600"/></div>
+<div style="text-align:center"><img src="/files/Chapter12/Random_Walk/RRW_p2.PNG" alt="drawing" width="700"/></div>
 *(source: Reinforcement Learning: An Introduction, 2nd Edition, by Richard S. Sutton and Andrew G. Barto)*
 
 
@@ -83,24 +83,24 @@ True online TD($$\lambda$$) approximates Online $$\lambda$$-return algorithm, an
 
 The left figure averages over at most 200 runs. The right figure is what we generated in Chapter 7.
 
-<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="360"/>
-<img src="/files/Chapter12/Random_Walk/TDn_title.svg" alt="drawing" width="360"/>
+<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="420"/>
+<img src="/files/Chapter12/Random_Walk/TDn_title.svg" alt="drawing" width="420"/>
 
 
 **TD($$\lambda$$) algorithm (for Figure 12.6)**
 
 The left figure averages over 500 runs.
 
-<img src="/files/Chapter12/Random_Walk/TD_lam.svg" alt="drawing" width="360"/>
-<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="360"/>
+<img src="/files/Chapter12/Random_Walk/TD_lam.svg" alt="drawing" width="420"/>
+<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="420"/>
 
 
 **True online TD($$\lambda$$) algorithm (for Figure 12.8)**
 
 The left figure averages over 500 runs.
 
-<img src="/files/Chapter12/Random_Walk/TOTD_lam.svg" alt="drawing" width="360"/>
-<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="360"/>
+<img src="/files/Chapter12/Random_Walk/TOTD_lam.svg" alt="drawing" width="420"/>
+<img src="/files/Chapter12/Random_Walk/lam_return.svg" alt="drawing" width="420"/>
 
 
 
