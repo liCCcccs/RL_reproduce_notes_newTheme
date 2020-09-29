@@ -22,7 +22,7 @@ title: RL book reproduction
 email: sunmr2017@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  Reference book:Reinforcement Learning book, 2nd edition, by Richard S. Sutton, Andrew G. Barto
-baseurl: "https://licccccs.github.io/RL_reproduce_notes_newTheme/" # the subpath of your site, e.g. /blog
+baseurl: "/RL_reproduce_notes_newTheme/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: hha
 github_username:  liCCcccs
